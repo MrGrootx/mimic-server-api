@@ -1,6 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const quotes = require("../data/quotes.json");
+const bills = require("../data/bills.json");
+const movies = require("../data/movies.json");
+const videos = require("../data/videos.json");
 
 // Tamil Nadu names data
 const tamilNames = {
@@ -212,10 +215,13 @@ const generateDatabase = () => {
 
   return {
     users,
+    movies,
+    quotes,
     posts,
     todos,
     projects,
-    quotes,
+    bills,
+    videos,
   };
 };
 
